@@ -13,7 +13,7 @@ public class HelloWorldApp {
         server.createContext("/", new HttpHandler() {
             @Override
             public void handle(HttpExchange exchange) throws IOException {
-                String response = "Hola Mundo";
+                String response = "Hola Mundo - DevOps funcionando!";
                 exchange.sendResponseHeaders(200, response.getBytes().length);
                 OutputStream os = exchange.getResponseBody();
                 os.write(response.getBytes());
